@@ -17,6 +17,11 @@ const router = createRouter({
             // which is lazy-loaded when the route is visited.
             component: () => import("../views/ContactView.vue"),
         },
+        {
+            path: "/api",
+            name: "api",
+            component: () => import("../views/ApiView.vue"),
+        },
     ],
 });
 
